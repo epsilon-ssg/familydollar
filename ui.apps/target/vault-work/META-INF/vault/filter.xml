@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/familydollarcorporate">
+        <exclude pattern="/apps/familydollarcorporate/install" />
+    </filter>
+     <filter root="/etc/designs/familydollarcorporate"/>
+</workspaceFilter>
