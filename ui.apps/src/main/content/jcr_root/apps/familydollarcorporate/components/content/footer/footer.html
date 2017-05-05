@@ -1,0 +1,27 @@
+<div id="footer" class="footerBaseLine">	
+<img alt="" class="footerImage left" src="${currentDesign.path}/clientlib-site/images/footerbox_left.png" />		
+	<!-- Footer Container 1-->
+	<div id="ctl00_footerNavigation">
+	    <div data-sly-resource="${'footerLinks1' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
+	    <div data-sly-resource="${'footerLinks2' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
+	    <div data-sly-resource="${'footerLinks3' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
+	</div>
+	<!-- Footer Container 4-->
+	<img alt="" class="footerImage right" src="${currentDesign.path}/clientlib-site/images/footerbox_right.png">
+	
+	<div id="FollowUsDiv" class="footerSub right" data-sly-use.footerInfo="com.familydollar.corporate.core.use.FooterWCMUse">
+		<div id="footerFollowUs">
+			<h4 data-sly-test="${properties.followUsLabel}">${properties.followUsLabel}</h4>
+            <div data-sly-list="${footerInfo.socialIcons}" data-sly-unwrap>
+            	<a data-sly-test="${item.iconImagePath}" href="${item.iconLinkURL}" target="${item.newWindow ? 'blank' : ''}"><img alt="${item.iconAltText}" src="${item.iconImagePath}"></a>
+            </div>
+		</div>
+		
+		<div class="copyright">
+		<a data-sly-test="${properties.termsAndPrivacyLabel}" target="${properties.termsAndPolicyNewWindow ? '_blank' : ''}" href="${footerInfo.termsAndPrivacyUrl ? footerInfo.termsAndPrivacyUrl : '#'}">${properties.termsAndPrivacyLabel}</a>
+		<br>
+		${properties.copyRightText}
+		</div>			
+	</div>
+	
+</div>

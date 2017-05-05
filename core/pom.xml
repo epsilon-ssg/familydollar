@@ -43,7 +43,8 @@
                             artifactId2;inline=true
                         </Embed-Dependency>
                         -->
-                        <Sling-Model-Packages>com.familydollar.corporate.familydollar_corporate.core</Sling-Model-Packages>
+                        <Embed-Dependency>gson</Embed-Dependency>
+                        <Sling-Model-Packages>com.familydollar.corporate.core</Sling-Model-Packages>
                     </instructions>
                 </configuration>
             </plugin>
@@ -126,6 +127,10 @@
         <dependency>
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
     </dependencies>
 </project>

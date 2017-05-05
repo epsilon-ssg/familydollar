@@ -1,0 +1,10 @@
+<div class="footerSub leftBorder left" data-sly-use.footer="com.familydollar.corporate.core.use.FooterLinksWCMUse">
+<div class="footerHead">
+	<a data-sly-test.header="${properties.headerLinkText}" href="${footer.headerLinkUrl ? footer.headerLinkUrl : '#'}" target="">${properties.headerLinkText}</a>
+	<a data-sly-test="${!header && wcmMode.edit}" href="#">Configure Footer Links</a>
+</div>
+<div data-sly-list="${footer.footerLinks}" data-sly-unwrap>
+<a href="${item.url}" target="${item.newWindow ? '_blank' : ''}">${item.text}</a><br>
+</div>
+
+</div>
