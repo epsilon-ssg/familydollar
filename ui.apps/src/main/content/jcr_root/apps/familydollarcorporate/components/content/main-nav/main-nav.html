@@ -1,0 +1,13 @@
+<div id="sidebar-wrapper" data-sly-use.nav="com.familydollar.corporate.core.use.MainNavigationWCMUse">
+    <ul class="sidebar-nav navbar-nav" data-sly-list="${nav.navigationItems}">
+      <li class="dropdown"> 
+	      <a href="${item.path}" target="${item.newWindow ? '_blank' : ''}">${item.label}
+	      <span data-sly-test="${item.children}" data-sly-unwrap><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><span class="caret"></span></span>
+	      </a>
+	      <ul data-sly-test="${item.children}" class="drop-down-menus" data-sly-list.child="${item.children}">
+	          <li><a href="${child.path}" target="${child.newWindow ? '_blank' : ''}">${child.label}</a></li>
+	          <li data-sly-test="${!childList.last}" role="separator" class="divider"></li>
+	      </ul>
+      </li>
+    </ul>
+  </div>

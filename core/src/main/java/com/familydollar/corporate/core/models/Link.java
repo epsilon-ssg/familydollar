@@ -1,6 +1,6 @@
 package com.familydollar.corporate.core.models;
 
-public class FooterLink {
+public class Link {
 	
 	private String text;
 	

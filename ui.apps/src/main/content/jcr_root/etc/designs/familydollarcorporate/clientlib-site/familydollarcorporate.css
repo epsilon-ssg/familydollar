@@ -1,7 +1,6 @@
 
 body {
 	margin:0; padding:0;
-	font-size:12px;
 	font-family: Verdana, Arial, sans-serif;
 }
 img	{
@@ -576,4 +575,10 @@ table.FDTreeViewOuterTable
     
     #ctl00_footerNavigation > div {
     	float: left;
+    }
+    
+    #wrapper {
+        width: 960px;
+		margin: 0 auto;
+	    position: relative;
     }

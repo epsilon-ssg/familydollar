@@ -6,13 +6,13 @@ import java.util.List;
 import javax.jcr.Node;
 
 import com.adobe.cq.sightly.WCMUse;
-import com.familydollar.corporate.core.models.FooterLink;
+import com.familydollar.corporate.core.models.Link;
 import com.familydollar.corporate.core.utils.LinksUtil;
 import com.google.gson.Gson;
 
 public class FooterLinksWCMUse extends WCMUse{
 	
-	private List<FooterLink> footerLinks = new ArrayList<FooterLink>();
+	private List<Link> footerLinks = new ArrayList<Link>();
 	
 	private String headerLinkUrl;
 
@@ -38,12 +38,12 @@ public class FooterLinksWCMUse extends WCMUse{
 	}
 
 	private void addFooterItem(Gson gson, String item) {
-		FooterLink footerItem = gson.fromJson(item, FooterLink.class);
+		Link footerItem = gson.fromJson(item, Link.class);
 		footerItem.setUrl(LinksUtil.checkInternalURLByPath(footerItem.getUrl(), getResourceResolver()));
 		footerLinks.add(footerItem);
 	}
 
-	public List<FooterLink> getFooterLinks(){
+	public List<Link> getFooterLinks(){
 		return footerLinks;
 	}
 	
