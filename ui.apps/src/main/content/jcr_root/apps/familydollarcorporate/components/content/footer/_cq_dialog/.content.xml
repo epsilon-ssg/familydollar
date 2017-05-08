@@ -57,6 +57,7 @@
                                                           sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                                                           dname="iconURL"
                                                           fieldLabel="Icon Link URL"
+                                                          rootPath="/content/familydollarcorporate"/
                                                           name="./iconLinkURL"/>
 	                                                  <iconAltText
 					                                      jcr:primaryType="nt:unstructured"

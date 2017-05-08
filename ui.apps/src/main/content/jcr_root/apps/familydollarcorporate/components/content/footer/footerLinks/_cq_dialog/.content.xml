@@ -69,6 +69,7 @@
 	                                                        fieldDescription="Enter fully qualified URL for external URLs. Eg: https://www.familydollar.com"
 	                                                        fieldLabel="Link URL"
 	                                                        name="./url"
+	                                                        rootPath="/content"
 	                                                        required="{Boolean}true" />
 	                                                    <newWindow
 		                                                    jcr:primaryType="nt:unstructured"

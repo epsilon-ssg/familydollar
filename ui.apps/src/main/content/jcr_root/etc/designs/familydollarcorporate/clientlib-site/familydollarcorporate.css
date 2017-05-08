@@ -157,7 +157,7 @@ img	{
 .footerBaseLine	{
 	/*width:960px;
 	height:103px;*/
-	background-image:url('/_layouts/1033/Images/fd/Corporate/footerbox_middleonepix.png');
+	background-image:url('images/footerbox_middleonepix.png');
 	background-repeat:repeat-x;
 	background-position:left bottom;
 }
