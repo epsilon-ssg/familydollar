@@ -1,6 +1,0 @@
-com\familydollar\corporate\core\models\HelloWorldModel.class
-com\familydollar\corporate\core\servlets\SimpleServlet.class
-com\familydollar\corporate\core\package-info.class
-com\familydollar\corporate\core\filters\LoggingFilter.class
-com\familydollar\corporate\core\schedulers\SimpleScheduledTask.class
-com\familydollar\corporate\core\listeners\SimpleResourceListener.class
