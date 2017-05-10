@@ -43,10 +43,6 @@ public class FooterWCMUse extends WCMUse{
 		
 	}
 	
-	public String getTest(){
-		return "Testing!";
-	}
-
 	public String getTermsAndPrivacyUrl(){
 		return LinksUtil.checkInternalURLByPath(termsAndPrivacyUrl, getResourceResolver());
 	}

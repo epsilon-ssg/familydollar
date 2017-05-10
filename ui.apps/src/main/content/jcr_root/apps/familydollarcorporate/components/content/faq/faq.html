@@ -1,0 +1,9 @@
+<h3 data-sly-test="${wcmmode.edit}">Edit FAQ Component!</h3>
+<div class="faq" data-sly-use.faq="com.familydollar.corporate.core.use.FAQWCMUse">
+	<h2 data-sly-test="${properties.faqHeading}">${properties.faqHeading}</h2>
+	
+	<div data-sly-list="${faq.faqCategoryList}">
+		<a href="#${item}">${item}</a><br>
+	</div>
+	<div data-sly-resource="${@path='faqcontent', resourceType='wcm/foundation/components/parsys'}"></div>
+</div>

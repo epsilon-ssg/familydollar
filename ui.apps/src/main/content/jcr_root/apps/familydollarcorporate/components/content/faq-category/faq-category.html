@@ -1,0 +1,9 @@
+ <h3 data-sly-test="${wcmmode.edit}">Edit FAQ Category!</h3> 
+ <div class="faq-category">
+ <h3 id="${properties.category}">${properties.category}</h3>
+ <div data-sly-use.faq="com.familydollar.corporate.core.use.FAQCategoryWCMUse" data-sly-list="${faq.faqList}">
+ 	<p><strong>${item.question}</strong></p>
+ 	<div>${item.text @ context='html'}</div>
+ </div>
+ <p align="right" sizcache="1" sizset="159"><a href="#top">${properties.backToTopLabel}</a></p>
+ </div>
