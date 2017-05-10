@@ -1,0 +1,30 @@
+
+<h4 data-sly-test="${wcmmode.edit}">Edit Multimedia Component!</h4>
+
+<!-- Flash -->
+
+<object data-sly-test="${properties.multimediaType == 'flash'}" type="application/x-shockwave-flash" data="${properties.flashPath}" width="960" height="281">
+  <param name="movie" value="${properties.flashPath}">
+  <param name="quality" value="high">
+  <param name="wmode" value="opaque">
+  <param name="swfversion" value="6.0.65.0">
+<!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+  <div>
+    <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+    <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33"></a></p>
+  </div>
+</object>
+
+<!-- Image/Image Carousel -->
+
+<section class="multimedia-image-carousel" data-sly-test="${properties.multimediaType == 'imagecarousel'}">
+	<div class="multimedia-slider responsive" data-sly-list="${properties.imagePath}">
+		<div class="item">
+			<img src="${item}">
+		</div>
+	</div>
+</section>
+
+
+
+

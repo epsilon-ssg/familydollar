@@ -1,0 +1,37 @@
+.multimedia-image-carousel .multimedia-slider {
+	padding: 0 50px;
+}
+
+.multimedia-image-carousel .item {
+	text-align: center;
+	outline: none;
+}
+
+.multimedia-image-carousel .slick-slide img {
+	display: inline;
+}
+
+.multimedia-image-carousel .slick-dots {
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 0px;
+}
+
+.multimedia-image-carousel .slick-dots li {
+	display: inline-block;
+}
+
+.multimedia-image-carousel .slick-dots li button {
+	text-indent: -9999px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	background: #bbbbbb;
+	border: none;
+	margin-right: 10px;
+}
+
+.multimedia-image-carousel .slick-dots .slick-active button {
+	background: #7c7c7c;
+	outline: none;
+}
