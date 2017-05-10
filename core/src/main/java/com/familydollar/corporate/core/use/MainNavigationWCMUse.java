@@ -32,19 +32,21 @@ public class MainNavigationWCMUse extends WCMUse{
 	private void buildNavigationItem(final Iterator<Page> pageIterator, List<Navigation> navItems) {
 		while(pageIterator.hasNext()){
 			Page page = pageIterator.next();
-			Navigation navItem = new Navigation();
-			navItem.setLabel(getNavigationLabel(page));
-			String redirect = page.getProperties().get(REDIRECT_TARGET,
-					String.class);
-			if (redirect != null && redirect.startsWith(HTTP)) {
-				navItem.setNewWindow(true);
-				navItem.setPath(redirect);
-			} else {
-				navItem.setNewWindow(false);
-				navItem.setPath(LinksUtil.checkInternalURLByPath(page.getPath(), getResourceResolver()));
+			if(!page.isHideInNav()){
+				Navigation navItem = new Navigation();
+				navItem.setLabel(getNavigationLabel(page));
+				String redirect = page.getProperties().get(REDIRECT_TARGET,
+						String.class);
+				if (redirect != null && redirect.startsWith(HTTP)) {
+					navItem.setNewWindow(true);
+					navItem.setPath(redirect);
+				} else {
+					navItem.setNewWindow(false);
+					navItem.setPath(LinksUtil.checkInternalURLByPath(page.getPath(), getResourceResolver()));
+				}
+				buildSubNavigationItems(page, navItem);
+				navItems.add(navItem);
 			}
-			buildSubNavigationItems(page, navItem);
-			navItems.add(navItem);
 		}
 	}
 	
