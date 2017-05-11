@@ -1,0 +1,11 @@
+<sly data-sly-use.sideNav="com.familydollar.corporate.core.use.SidenavigationWCMUse">
+  <sly data-sly-test="${wcmmode.edit || wcmmode.design}"> 
+      <p>Configure SideNavigation component</p>
+      </sly> 
+  </sly>
+<ul data-sly-list="${sideNav.navList}" class="accordion">
+
+		<sly data-sly-use.requestUtil="${'com.familydollar.corporate.core.utils.RequestUtil' @ navPath=item.pagePath}">
+		   <sly data-sly-include="subnav.html"/>
+		</sly>
+		</ul>

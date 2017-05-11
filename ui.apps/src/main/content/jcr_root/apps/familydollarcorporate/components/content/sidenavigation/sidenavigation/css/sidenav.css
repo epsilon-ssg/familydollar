@@ -1,0 +1,37 @@
+.accordion{
+   font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+}
+.accordion  ul{
+  margin: 0px;
+  padding: 0 0 0 10px;
+} 
+.accordion, li{
+  list-style-type: none;
+}
+.accordion > li{
+  border-bottom:solid 1px #aaabbc;
+}
+.accordion  li a{
+  text-decoration: none;
+  font-weight: bold;
+  color:#4d4d4f;
+  padding:5px 0;
+  display: block;
+}
+.accordion li>ul{
+   
+    display: none;
+}
+.accordion li a:before{
+    font: normal normal normal 12px/1 FontAwesome;
+    content: "\f04b";
+    color:#ff0000;
+    display: inline-block;
+    float: left;
+    line-height: 17px;
+    margin-right: 5px;
+}
+
+.accordion li a.toggle.open:before{
+    transform: rotate(-30deg); 
+}

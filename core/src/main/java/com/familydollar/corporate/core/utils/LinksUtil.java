@@ -1,6 +1,5 @@
 package com.familydollar.corporate.core.utils;
 
-import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceUtil;
@@ -8,7 +7,6 @@ import org.apache.sling.api.resource.ValueMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.day.cq.commons.Externalizer;
 import com.day.cq.wcm.api.Page;
 import com.familydollar.corporate.core.constants.CommonConstants;
 
@@ -103,13 +101,4 @@ public class LinksUtil {
 		return false;
 	}
 	
-	public static String getCanonicalUrl(String path, SlingHttpServletRequest request, ResourceResolver resourceResolver) {
-		Externalizer externalizer = resourceResolver.adaptTo(Externalizer.class);
-		if (null != externalizer) {
-			String mappedPath = resourceResolver.map(path);
-			path = externalizer.absoluteLink(request,
-					request.getScheme(), mappedPath);
-		}
-		return path;
-	}
 }
