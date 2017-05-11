@@ -1,0 +1,11 @@
+<sly data-sly-use.subnav="com.familydollar.corporate.core.use.SubNavigation" data-sly-test.subnavitem="${subnav.navItem}">
+    <li>
+        <a class="${subnavitem.children ? 'toggle' : ''}" href="${subnavitem.pagePath ? subnavitem.pagePath : '#'}">${subnavitem.pageTitle}</a>
+    
+        <ul class="inner" data-sly-test="${subnavitem.children}" data-sly-list.children="${subnavitem.children}" >
+            <sly data-sly-use.requestUtil="${'com.familydollar.corporate.core.utils.RequestUtil' @ navPath=children.pagePath}">
+             <sly data-sly-include="subnav.html"/>
+            </sly>
+        </ul>
+    </li>
+</sly>
