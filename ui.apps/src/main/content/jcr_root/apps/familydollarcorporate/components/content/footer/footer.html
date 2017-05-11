@@ -1,27 +1,26 @@
-<div id="footer" class="footerBaseLine">	
-<img alt="" class="footerImage left" src="${currentDesign.path}/clientlib-site/images/footerbox_left.png" />		
+<div class="footer container">	
 	<!-- Footer Container 1-->
-	<div id="ctl00_footerNavigation">
-	    <div data-sly-resource="${'footerLinks1' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
-	    <div data-sly-resource="${'footerLinks2' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
-	    <div data-sly-resource="${'footerLinks3' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
+	<div class="footerWrapper">
+	    <div class="col-md-3 col-sm-5 col-xs-12 foot-col-one" data-sly-resource="${'footerLinks1' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
+	    <div class="col-md-3 col-sm-6 col-xs-12 foot-col-two" data-sly-resource="${'footerLinks2' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
+	    <div class="col-md-3 col-sm-5 col-xs-12 foot-col-three" data-sly-resource="${'footerLinks3' @ resourceType='familydollarcorporate/components/content/footer/footerLinks'}" ></div>
 	</div>
-	<!-- Footer Container 4-->
-	<img alt="" class="footerImage right" src="${currentDesign.path}/clientlib-site/images/footerbox_right.png">
-	
-	<div id="FollowUsDiv" class="footerSub right" data-sly-use.footerInfo="com.familydollar.corporate.core.use.FooterWCMUse">
-		<div id="footerFollowUs">
-			<h4 data-sly-test="${properties.followUsLabel}">${properties.followUsLabel}</h4>
-            <div data-sly-list="${footerInfo.socialIcons}" data-sly-unwrap>
-            	<a data-sly-test="${item.iconImagePath}" href="${item.iconLinkURL}" target="${item.newWindow ? 'blank' : ''}"><img alt="${item.iconAltText}" src="${item.iconImagePath}"></a>
+	<div class="col-md-3 col-sm-7 col-xs-12 foot-col-four right" data-sly-use.footerInfo="com.familydollar.corporate.core.use.FooterWCMUse">
+    <div class="footerSub">
+		<div class="followUs">
+			<div class="col-lg-5 footerTitle">
+			<h6 data-sly-test="${properties.followUsLabel}">${properties.followUsLabel}</h6></div>
+			<div class="col-lg-7 footerSocial">
+              	<div data-sly-list="${footerInfo.socialIcons}" data-sly-unwrap>
+            		<a data-sly-test="${item.iconImagePath}" href="${item.iconLinkURL}" target="${item.newWindow ? 'blank' : ''}"><img alt="${item.iconAltText}" src="${item.iconImagePath}"></a>
+            	</div>          
             </div>
 		</div>
-		
-		<div class="copyright">
+		<div class="copyright col-lg-12 col-xs-12">
 		<a data-sly-test="${properties.termsAndPrivacyLabel}" target="${properties.termsAndPolicyNewWindow ? '_blank' : ''}" href="${footerInfo.termsAndPrivacyUrl ? footerInfo.termsAndPrivacyUrl : '#'}">${properties.termsAndPrivacyLabel}</a>
 		<br>
-		${properties.copyRightText}
-		</div>			
+		<span class="copy-text">${properties.copyRightText}</span>
+		</div>
+        </div>
 	</div>
-	
 </div>
