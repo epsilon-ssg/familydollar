@@ -19,7 +19,6 @@
                     <richtextcontent
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                        fieldDescription="Configured here using inplace editing for first time"
                         fieldLabel="Rich Text Content"
                         name="./text"
                         required="{Boolean}false"/>

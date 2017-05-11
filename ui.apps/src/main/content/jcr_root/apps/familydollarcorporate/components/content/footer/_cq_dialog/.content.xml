@@ -48,16 +48,14 @@
                                                       <iconPath
                                                           jcr:primaryType="nt:unstructured"
                                                           sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                          dname="iconPath"
                                                           fieldLabel="Icon Image Path"
                                                           name="./iconImagePath"
                                                           rootPath="/content/dam/familydollarcorporate"/>
                                                        <iconURL
                                                           jcr:primaryType="nt:unstructured"
                                                           sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                          dname="iconURL"
                                                           fieldLabel="Icon Link URL"
-                                                          rootPath="/content/familydollarcorporate"/
+                                                          rootPath="/content/familydollarcorporate"
                                                           name="./iconLinkURL"/>
 	                                                  <iconAltText
 					                                      jcr:primaryType="nt:unstructured"

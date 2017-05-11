@@ -20,11 +20,6 @@
 		                        sling:resourceType="granite/ui/components/foundation/form/textfield"
 		                        fieldLabel="Heading"
 		                        name="./faqHeading" />
-		                     <backToTopLabel
-		                        jcr:primaryType="nt:unstructured"
-		                        sling:resourceType="granite/ui/components/foundation/form/textfield"
-		                        fieldLabel="Back to Top label"
-		                        name="./backToTopLabel" />
                           </items>
                       </column>
         </items>
