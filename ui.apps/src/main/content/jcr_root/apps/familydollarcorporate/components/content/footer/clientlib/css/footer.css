@@ -14,6 +14,8 @@
 	width: 100%;
 	border-radius: 8px;
 	box-shadow: 0px 1px 0px 0px rgba(217, 212, 197, 1);
+    clear: both;
+    overflow: hidden;
 }
 
 .footerSub .footerHead h3 {
@@ -75,11 +77,13 @@
 	margin-top: 100px;
 }
 
-.footer.container {
+.footer{
 	border-top: 1px solid #C0BDB3;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 	margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 .border {
