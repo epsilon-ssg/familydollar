@@ -7,13 +7,36 @@ public class Link {
 	private String url;
 	
 	private boolean newWindow;
+	
+	private String description;
 
+	private String imagePath;
+	
+	private String videoPath;
+	
 	public String getText() {
 		return text;
 	}
 
 	public void setText(String text) {
 		this.text = text;
+	}
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+	public String getVideoPath() {
+		return videoPath;
+	}
+
+	public void setVideoPath(String videoPath) {
+		this.videoPath = videoPath;
+	}
+	public String getDescription() {
+		return description;
 	}
 
 	public String getUrl() {
@@ -30,6 +53,9 @@ public class Link {
 
 	public void setNewWindow(boolean newWindow) {
 		this.newWindow = newWindow;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 }
