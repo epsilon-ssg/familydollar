@@ -1,0 +1,19 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+        <p>Configure Container Component</p>
+ </sly>
+<sly data-sly-test="${properties.type=='black'}">    
+<div class="row">
+        <section class="col-lg-12 col-sm-12 col-md-12 bordered">
+	<div id="blackcontent" data-sly-resource="${@path='blackparcontent', resourceType='wcm/foundation/components/parsys'}"></div>
+      </section>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type=='red'}">    
+    <div class="row">
+        <section class="col-lg-12 col-sm-12 col-md-12 top-bordered">
+        	<div id="redcontent" data-sly-resource="${@path='redparcontent', resourceType='wcm/foundation/components/parsys'}"></div>
+        </section>
+    </div>
+</sly>
+
+
