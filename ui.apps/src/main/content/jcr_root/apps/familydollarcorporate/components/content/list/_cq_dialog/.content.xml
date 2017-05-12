@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="List"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".listItemhideshow"
+                        fieldLabel="Type"
+                        name="./type">
+                        <items jcr:primaryType="nt:unstructured">
+                            <link
+                                jcr:primaryType="nt:unstructured"
+                                key="link"
+                                text="News Items"
+                                value="link"/>
+                            <text
+                                jcr:primaryType="nt:unstructured"
+                                key="text"
+                                text="Image List"
+                                value="image"/>
+                        </items>
+                    </type>
+                    <listLinkContainer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="hide listItemhideshow"
+                        showhidetargetvalue="link">
+                        <items jcr:primaryType="nt:unstructured">
+                            <newsHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="News Title"
+                                name="./newsTitle"/>
+                            <listLinkItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/apps/familydollarcorporate/components/content/multifield"
+                                fieldDescription="Click '+' to add a new page"
+                                fieldLabel="List  Link Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./listLinkItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <label
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Label"
+                                                    maxlength="60"
+                                                    name="./label"/>
+                                                <URL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="Enter fully qualified URL for external URLs"
+                                                    fieldLabel="URL"
+                                                    name="./url"/>
+                                                <newWindow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="New Window"
+                                                    name="./newWindow">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <value1
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="true"
+                                                            value="true"/>
+                                                        <value2
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="false"
+                                                            value="false"/>
+                                                    </items>
+                                                </newWindow>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/include"
+                                                    fieldLabel="Description"
+                                                    name="./description"
+                                                    path="/apps/familydollarcorporate/components/content/rtecomponent/cq:dialog/content/items/column/items/richtextcontent"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </listLinkItems>
+                        </items>
+                    </listLinkContainer>
+                    <listImagecontainer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="hide listItemhideshow"
+                        showhidetargetvalue="image">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listImageItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/apps/epsilon/epsilon-mobile-app/components/content/multifield"
+                                fieldDescription="Click '+' to add a new page"
+                                fieldLabel="List  Text Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./imageListItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <imagePath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="Image Path"
+                                                    fieldLabel="Image Path"
+                                                    name="./imagePath"/>
+                                                <videoPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="Video Path"
+                                                    fieldLabel="Video Path"
+                                                    name="./videoPath"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </listImageItems>
+                        </items>
+                    </listImagecontainer>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

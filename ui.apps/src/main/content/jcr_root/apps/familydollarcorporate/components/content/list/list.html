@@ -1,0 +1,23 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+        <p>Configure List Component</p>
+ </sly>
+ 
+<sly data-sly-test="${properties.type}" data-sly-use.listObj="com.familydollar.corporate.core.use.ListWCMUse"></sly>
+<sly data-sly-test="${properties.type=='link'}">
+      <ul>
+      <sly data-sly-test="${properties.newsTitle}" >${properties.newsTitle}</sly>
+        <sly data-sly-list="${listObj.listLinks}" data-sly-unwrap>
+			<li><a href="${item.url}">${item.text}</a>${item.description @ context='html'}</li> 				 
+		</sly>
+    </ul>
+</sly>
+<sly data-sly-test="${properties.type=='image'}">    
+    <ul>
+        <sly data-sly-list="${listObj.listLinks}">
+        <sly data-sly-test="${item.videoPath}" >
+	        <a href="${item.videoPath}" > 
+	        <img src="${item.imagePath}"> </a>
+	     </sly>
+        </sly>
+    </ul>
+</sly>
