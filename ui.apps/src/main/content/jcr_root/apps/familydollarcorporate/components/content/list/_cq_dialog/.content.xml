@@ -133,6 +133,11 @@
                                                     fieldDescription="Image Path"
                                                     fieldLabel="Image Path"
                                                     name="./imagePath"/>
+                                                <altText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Alt Text"
+                                                    name="./altText"/>
                                                 <videoPath
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"

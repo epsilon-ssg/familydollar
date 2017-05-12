@@ -77,6 +77,7 @@ public class ListWCMUse extends WCMUse{
 				getResource().getResourceResolver().getResource(listLinkUrl)));
 		}else{
 			listitems.setImagePath((String) links.get("imagePath"));
+			listitems.setText((String) links.get("altText"));
 			listitems.setVideoPath((String) links.get("videoPath"));
 			}
 		Links.add(listitems);

@@ -14,10 +14,8 @@
 <sly data-sly-test="${properties.type=='image'}">    
     <ul>
         <sly data-sly-list="${listObj.listLinks}">
-        <sly data-sly-test="${item.videoPath}" >
-	        <a href="${item.videoPath}" > 
-	        <img src="${item.imagePath}"> </a>
-	     </sly>
-        </sly>
+           	<li data-sly-test="${item.videoPath}"><a href="${item.videoPath}"><img src="${item.imagePath}"  alt=""/> </a></li>
+            <li data-sly-test="${!item.videoPath}"><img src="${item.imagePath}"  alt=""/></li>
+ </sly>
     </ul>
 </sly>
