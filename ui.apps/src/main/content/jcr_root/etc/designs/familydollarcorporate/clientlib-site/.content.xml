@@ -3,4 +3,4 @@
     jcr:primaryType="cq:ClientLibraryFolder"
     categories="[familydollar-corporate.site]"
     dependencies="[familydollar-corporate.all]"
-    embed="[familydollar-corporate.page,familydollar-corporate.topnav,familydollar-corporate.colctrl,familydollar-corporate.textimage,familydollar-corporate.footer,familydollar-corporate.main-nav,familydollar-corporate.multimedia,familydollar-corporate.rtecomponent,familydollar-corporate.sidenavigation,familydollar-corporate.header,familydollar-corporate.container]"/>
+    embed="[familydollar-corporate.page,familydollar-corporate.topnav,familydollar-corporate.colctrl,familydollar-corporate.textimage,familydollar-corporate.footer,familydollar-corporate.main-nav,familydollar-corporate.multimedia,familydollar-corporate.rtecomponent,familydollar-corporate.sidenavigation,familydollar-corporate.header,familydollar-corporate.container,familydollar-corporate.button]"/>

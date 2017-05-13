@@ -1,0 +1,6 @@
+<div data-sly-test="${wcmmode.edit}"><h4>Edit button!</h4></div>
+<div data-sly-use.button="com.familydollar.corporate.core.use.ButtonWCMUse" class="btn-group" data-sly-test="${properties.buttonText}">
+  <button type="button" class="${properties.type}">
+  	<a href="${properties.buttonLink ? button.buttonLink : '#'}" target="${properties.buttonLinkNewWindow ? '_blank' : ''}"><span>${properties.buttonText}</span></a>
+  </button>
+</div>

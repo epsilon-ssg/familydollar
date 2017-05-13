@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Button"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                      <column
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/foundation/container">
+                          <items jcr:primaryType="nt:unstructured">
+                              <buttonType
+	                              jcr:primaryType="nt:unstructured"
+	                              sling:resourceType="granite/ui/components/foundation/form/select"
+	                              fieldLabel="Type"
+	                              name="./type">
+	                              <items jcr:primaryType="nt:unstructured">
+	                                  <red
+	                                      jcr:primaryType="nt:unstructured"
+	                                      key="button-red"
+	                                      text="Red"
+	                                      value="button-red"/>
+	                                  <grey
+	                                      jcr:primaryType="nt:unstructured"
+	                                      key="button-gray-rtArrow"
+	                                      text="Grey"
+	                                      value="button-gray-rtArrow"/>
+	                                   <orange
+	                                      jcr:primaryType="nt:unstructured"
+	                                      key="button-yellow"
+	                                      text="Yellow"
+	                                      value="button-yellow"/>
+	                                 </items>
+                              </buttonType> 
+                              <buttonText
+			                        jcr:primaryType="nt:unstructured"
+			                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+			                        fieldLabel="Text"
+			                        required="{Boolean}true"
+			                        name="./buttonText" />
+                              <buttonLink
+			                        jcr:primaryType="nt:unstructured"
+			                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+			                        fieldLabel="Button Link Url"
+			                        emptyText="Enter fully qualified URL for external URLs. Eg: https://www.familydollar.com"
+	                                fieldDescription="Enter fully qualified URL for external URLs. Eg: https://www.familydollar.com"
+			                        rootPath="/content/familydollarcorporate"
+			                        name="./buttonLink"/>
+			                   <buttonLinkNewWindow
+			                        jcr:primaryType="nt:unstructured"
+			                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+			                        name="./buttonLinkNewWindow"
+			                        text="Open Link in New Window"
+			                        value="{Boolean}true"/>
+			                    <buttonLinkNewWindowDelete
+			                        jcr:primaryType="nt:unstructured"
+			                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+			                        name="./buttonLinkNewWindow@delete"
+			                        value="{Boolean}true"/>
+                          </items>
+                      </column>
+        </items>
+    </content>
+</jcr:root>
