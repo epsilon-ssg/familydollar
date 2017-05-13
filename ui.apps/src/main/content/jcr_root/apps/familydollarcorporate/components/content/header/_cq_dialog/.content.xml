@@ -95,7 +95,7 @@
                                         name="./placeholderText"/>
                                     <searchUrl
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                                         fieldDescription="Search Url"
                                         fieldLabel="Search URL "
                                         name="./searchUrl"
