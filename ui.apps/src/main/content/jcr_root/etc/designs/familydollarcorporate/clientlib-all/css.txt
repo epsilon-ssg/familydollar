@@ -1,4 +1,5 @@
 #base=css
 bootstrap.min.css
+slick-theme.css
 slick.css
 font-awesome.css

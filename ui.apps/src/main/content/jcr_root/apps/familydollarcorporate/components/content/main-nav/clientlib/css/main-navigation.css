@@ -1,60 +1,20 @@
-/*!
- * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-body {
-	overflow-x: hidden;
-}
-/* common styles */
-.left {
-	float: left;
-}
-.right {
-	float: right;
-}
-.block-inline {
-	display: inline-block;
-}
 /* Toggle Styles */
 
-#wrapper, .header {
+#wrapper {
 	padding-left: 0;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
-#wrapper{
 
-background: -moz-linear-gradient(top, rgba(237,235,226,1) 0%, rgba(237,235,226,0.99) 1%, rgba(247,246,242,0.71) 41%, rgba(247,246,242,0.29) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(237,235,226,1) 0%,rgba(237,235,226,0.99) 1%,rgba(247,246,242,0.71) 41%,rgba(247,246,242,0.29) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(237,235,226,1) 0%,rgba(237,235,226,0.99) 1%,rgba(247,246,242,0.71) 41%,rgba(247,246,242,0.29) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edebe2', endColorstr='#4af7f6f2',GradientType=0 ); /* IE6-9 */
-}
 #wrapper.toggled {
 	padding-left: 250px;
 }
 #wrapper.toggled #sidebar-wrapper {
 	width: 250px;
 }
-#page-content-wrapper {
-	width: 100%;
-	position: absolute;
-	padding: 15px;
-}
-.header.toggled #page-content-wrapper {
-	position: absolute;
-	margin-right: -250px;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-.header.toggled .logo-img {
-	margin-right: -250px;
-}
+
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -131,65 +91,20 @@ ul.drop-down-menus {
 .sidebar-nav a {
 	color: #717375;
 }
-#menu-toggle {
-	font-size: 25px;
-}
-#headerLinks {
-	display: none;
-}
-.content-right {
-	display: none;
-}
-#page-content-wrapper {
-	width: auto;
-	position: absolute;
-	padding: 15px 0;
-	display: inline-block;
-}
-.logo-img.col-sm-6 {
-	/* float: right; */
-	margin-top: 14px;
-	padding-right: 0;
-	position: absolute;
-	right: 6px;
-}
-.transition-five {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-.header.toggled {
-	padding-left: 250px;
-	position: fixed;
-	width: 100%;
-}
-#header-par{    
-    min-height: 50px;
-    clear: both;
-        position: fixed;
-    width: 100%;
-    margin-bottom: 50px;
-    background: #fff;
-    z-index: 999;
-}
-.sidebar-nav li{
-width:100%;}
+
 }
 
 @media(min-width:980px) {
 #sidebar-wrapper {
 	min-height: 40px;
-	background-image: url('../images/topnav_middleonepix.png');
+	background-image: url('/etc/designs/familydollarcorporate/clientlib-site/images/topnav_middleonepix.png');
 	background-repeat: repeat-x;
 }
 
 #sidebar-wrapper li.dropdown .glyphicon-triangle-right {
 	display: none;
 }
-body {
-	margin-top: 20px;/*    	padding-bottom: 20px;*/
-}
+
 .drop-down-menus li {
 	line-height: 10px;
 	text-indent: 10px;
@@ -222,9 +137,7 @@ body {
 	padding: 0 0 0 15px;
 	list-style: none;
 }
-#page-content-wrapper {
-	display: none;
-}
+
 .navbar-nav>li>.drop-down-menus {
 	background: #696A6C;
 }
@@ -237,36 +150,5 @@ body {
 #wrapper.toggled #sidebar-wrapper {
 	width: 250px;
 }
-#page-content-wrapper {
-	padding: 20px;
-	position: relative;
-}
-#wrapper.toggled #page-content-wrapper {
-	position: relative;
-	margin-right: 0;
-}
-/* Main-header section */
-.header {
-	min-height: 50px;
-	margin-bottom: 20px;
-}
-.header .logo-img a {
-	padding-left: 10px;
-}
-#headerLinks {
-	margin-right: 30px;
-	text-align: right;
-}
-.header .content-right {
-	float: right;
-}
-#headerLinks .sub-head-nav {
-	margin-top: 5px;
-	margin-left: 20px;
-}
-.header .logo-img {
-	padding-left: 25px;
-}
-#header-par{    clear: both;
-    }
+
 }

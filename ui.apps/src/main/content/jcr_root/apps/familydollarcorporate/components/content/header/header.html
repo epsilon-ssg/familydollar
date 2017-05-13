@@ -8,7 +8,12 @@
 <div class="logo-img col-lg-6 col-sm-6 transition-five"> <a href="${properties.logoUrl}.html" target="_self"> <img class="hidden-xs hidden-sm" src="${properties.desktopImage}" alt="${properties.altText}"> <img class="hidden-md hidden-lg right" src="${properties.mobileImage}" alt="${properties.altText}"> </a> </div>
     <div class="col-lg-6 col-sm-6 content-right">
       <div id="headerLinks" class="">
-         <sly data-sly-test=${properties.placeholderText}>
+	     <div class="left sub-head-nav" > 
+			<div data-sly-list="${header.headerLinks}" data-sly-unwrap>			
+			  <a href="${item.url}">${item.text}</a><sly data-sly-test=${!itemList.last}>|</sly>	
+			</div>
+	     </div>
+	     <sly data-sly-test=${properties.placeholderText}>
         <div id="search" class="col-lg-6 col-sm-12">
           <div class="">
             <div class="input-group">
@@ -17,11 +22,6 @@
           </div>
         </div>
       </sly>
-	     <div class="left sub-head-nav" > 
-			<div data-sly-list="${header.headerLinks}" data-sly-unwrap>			
-			  <a href="${item.url}">${item.text}</a><sly data-sly-test=${!itemList.last}>|</sly>	
-			</div>
-	     </div>
     </div>
   </div>
  </div>

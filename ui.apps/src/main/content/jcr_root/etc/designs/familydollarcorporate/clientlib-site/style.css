@@ -1,3 +1,29 @@
 body{
     font-family: Verdana, Arial, sans-serif;
 }
+
+body {
+	overflow-x: hidden;
+}
+/* common styles */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.block-inline {
+	display: inline-block;
+}
+
+#content{
+    clear:both;
+}
+
+@media(min-width:980px) {
+
+body {
+	margin-top: 20px;/*    	padding-bottom: 20px;*/
+}
+
+}
