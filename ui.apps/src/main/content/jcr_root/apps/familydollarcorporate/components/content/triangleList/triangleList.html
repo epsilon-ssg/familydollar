@@ -1,0 +1,11 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+        <p>Configure Triangle List Component</p>
+ </sly>
+
+<sly data-sly-use.listObj="com.familydollar.corporate.core.use.TriangleListWCMUse"></sly>
+<ul>
+        <sly data-sly-list="${listObj.listLinks}" data-sly-unwrap>
+			<li><a href="${item.triangleImageUrl}"><img src="${item.triangleImage" alt=""/></a></li> 				 
+		</sly>
+    </ul>
+ 
